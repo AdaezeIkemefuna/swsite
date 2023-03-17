@@ -1,8 +1,11 @@
 .btn {
   @include flexInlineCenter;
-  border-radius: 12px;
-  border: 1px solid $primary-color;
+  border-radius: 20px;
+  border: 1px solid $secondary-color;
   color: $white-color;
-  padding: $xs-font $lg-font;
+  padding: $xxs-font $xxs-font;
   background-color: $primary-color;
+  text-transform: capitalize;
+  font-size: $sm-font;
+  cursor: pointer;
 }

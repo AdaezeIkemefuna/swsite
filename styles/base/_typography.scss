@@ -1,0 +1,21 @@
+.navLinks {
+  font-weight: 600;
+  font-size: $md-font;
+  line-height: 29px;
+}
+
+.headerWrapper {
+  color: $white-color;
+  .headerBottom {
+    h1 {
+      font-weight: 800;
+      font-size: $md-font;
+      line-height: 29px;
+    }
+    p {
+      text-align: center;
+      font-size: $extra-font;
+      font-weight: 400;
+    }
+  }
+}
