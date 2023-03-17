@@ -9,6 +9,7 @@
 
   .headerBottom {
     @include flexSpaceAround;
+    padding: 0 $xxl-font2;
     aside {
       width: 50%;
       @include flexCenterCenter;
