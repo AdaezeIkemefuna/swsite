@@ -1,0 +1,86 @@
+.footer {
+  .sub {
+    padding: $xxl-font $xxl-font2;
+
+    @include flexSpaceCenter;
+    aside {
+      width: 45%;
+      gap: 2%;
+      flex-direction: column;
+      gap: $sm-font;
+      margin: $xl-font 0;
+      min-height: 400px;
+      max-width: 40vw;
+      padding: $md-font;
+      h1 {
+        margin-bottom: $md-font;
+      }
+      p {
+        margin-bottom: $md-font;
+        font-size: $extra-font;
+        text-align: center;
+      }
+    }
+    &__left {
+      @include flexCenterCenter;
+
+      color: $white-color;
+      background-color: $primary-color;
+      & > * {
+        max-width: 350px;
+      }
+    }
+    &__right {
+      color: $primary-color;
+      display: flex;
+      justify-content: flex-start;
+      text-align: center;
+      h2 {
+        font-size: $md-font;
+        font-weight: 600;
+        border-bottom: 1px solid #462f2f;
+        align-self: stretch;
+        text-align: center;
+        text-transform: capitalize;
+        padding-bottom: $xs-font;
+        margin-bottom: $xxs-font;
+      }
+
+      ul li {
+        list-style-type: none;
+        padding: $sm-font 0 $xs-font;
+        text-transform: capitalize;
+        font-size: $extra-font;
+        color: #462f2f;
+        border-bottom: 1px solid $light-gray;
+        font-weight: 500;
+        @include flexSpaceCenter;
+
+        span:nth-child(2) {
+          font-weight: 400;
+          font-size: $sm-font;
+        }
+      }
+    }
+  }
+
+  .footerLinks {
+    @include flexSpaceAround;
+    background-color: $primary-color;
+    padding: $xxl-font2 $xxl-font2 $xxl-font;
+
+    a {
+      color: $white-color;
+      font-weight: 400;
+      font-size: $extra-font;
+    }
+    .activeLink {
+      color: $secondary-color;
+    }
+  }
+  .copyright {
+    background-color: $primary-color;
+    padding-bottom: $xxl-font;
+    text-align: center;
+  }
+}

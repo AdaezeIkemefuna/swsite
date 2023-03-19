@@ -19,3 +19,18 @@
     }
   }
 }
+
+.main__sectionAside2 {
+  h1 {
+    color: $secondary-color;
+    font-weight: 700;
+    font-size: $xl-font;
+    line-height: 58px;
+  }
+  p {
+    color: $white-color;
+    font-weight: 500;
+    font-size: $extra-font;
+    line-height: 29px;
+  }
+}
