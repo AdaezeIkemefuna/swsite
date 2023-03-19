@@ -1,0 +1,36 @@
+.navLinks {
+  font-weight: 600;
+  font-size: $md-font;
+  line-height: 29px;
+}
+
+.headerWrapper {
+  color: $white-color;
+  .headerBottom {
+    h1 {
+      font-weight: 800;
+      font-size: $md-font;
+      line-height: 29px;
+    }
+    p {
+      text-align: center;
+      font-size: $extra-font;
+      font-weight: 400;
+    }
+  }
+}
+
+.main__sectionAside2 {
+  h1 {
+    color: $secondary-color;
+    font-weight: 700;
+    font-size: $xl-font;
+    line-height: 58px;
+  }
+  p {
+    color: $white-color;
+    font-weight: 500;
+    font-size: $extra-font;
+    line-height: 29px;
+  }
+}

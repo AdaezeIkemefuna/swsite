@@ -23,6 +23,12 @@
   align-items: center;
 }
 
+@mixin flexSpaceAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @mixin grayHoverPointer {
   color: $primary-color;
   cursor: pointer;
