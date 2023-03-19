@@ -1,0 +1,44 @@
+.main {
+  animation: fadeIn 3s;
+
+  background-color: $background-color;
+  color: $primary-color;
+  .contactWrapper {
+    @include flexCenterCenter;
+
+    padding: $xxl-font2;
+    aside {
+      display: flex;
+      padding: $xl-font $xxl-font;
+      flex-direction: column;
+      align-items: stretch;
+      gap: $md-font;
+      width: 50%;
+      max-width: 50vw;
+      h1 {
+        font-weight: 600;
+        font-size: $extra-font2;
+      }
+      button {
+        align-self: flex-end;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: $extra-font;
+        line-height: 29px;
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        gap: $xs-font;
+      }
+    }
+  }
+  .mapImage {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 100vw;
+    height: 411px;
+  }
+}

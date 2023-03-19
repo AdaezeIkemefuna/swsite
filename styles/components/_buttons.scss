@@ -7,5 +7,25 @@
   background-color: $primary-color;
   text-transform: capitalize;
   font-size: $sm-font;
+  outline: none;
   cursor: pointer;
+}
+
+.btn2 {
+  @include flexInlineCenter;
+  border-radius: 6px;
+  border: none;
+  color: $white-color;
+  padding: $xxs-font $xxs-font;
+  background-color: $secondary-color;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: $extra-font;
+  outline: none;
+  cursor: pointer;
+  margin-top: $sm-font;
+}
+
+.textarea {
+  width: 100%;
 }

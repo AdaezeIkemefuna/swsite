@@ -1,0 +1,27 @@
+.mainReservation {
+  background-color: $background-color;
+  padding: $xxl-font2 $xl-font $xl-font;
+  animation: fadeIn 3s;
+
+  @include flexCenterCenter;
+  flex-direction: column;
+  h1 {
+    color: $primary-color;
+    margin-bottom: $xxl-font2;
+  }
+
+  .inputSection {
+    @include flexCenterCenter;
+    gap: $xxl-font3;
+    margin-bottom: $xl-font;
+    & > * {
+      @include flexSpaceCenter;
+      flex-direction: column;
+      gap: $xl-font;
+      min-width: 300px;
+      & > * {
+        width: 100%;
+      }
+    }
+  }
+}
