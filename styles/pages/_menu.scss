@@ -1,0 +1,60 @@
+.headerMenu{
+    color: $primary-color;
+    .headerTop {
+    text-align: center;
+    @include flexCenterCenter;
+    margin:$lg-font 0;
+    h1{
+        font-size: $lg-font;
+        font-weight: 800;
+        border-bottom: 3px solid $secondary-color;
+    }
+    }
+
+    .list{
+        @include flexSpaceAround; 
+        font-size:$md-font;
+        margin:$md-font 0;
+        margin-top: $xxl-font ;
+      }
+
+      .body1{
+        background-color: $primary-color;
+        .menu__content{
+        color: $white-color;
+
+        }
+      }
+
+     .body{
+        padding:$lg-font 0 ;
+        .menu__body{
+        @include flexCenterCenter; 
+         h1{
+            color: $secondary-color;
+            font-size: 1.875rem;
+            font-weight: 600;
+            padding: $lg-font;
+
+         }
+        }
+
+        .menu__content{
+         display: grid;
+        grid-template-columns:1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap:2rem;
+        padding:0 $lg-font;
+        padding-bottom: $lg-font;
+        margin:0 $xl-font
+        }
+
+        .menu__text{
+        @include flexSpaceAround;
+        padding-bottom: $sm-font;
+        border-bottom: 1px solid $black-color1;
+        }
+      }
+
+}
