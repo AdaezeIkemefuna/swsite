@@ -2,16 +2,26 @@
   background-color: $background-color;
   .sub {
     padding: $xxl-font $xxl-font2;
+    @include sm {
+      padding: $lg-font;
+    }
 
     @include flexSpaceCenter;
+    @include lg {
+      flex-direction: column;
+    }
     aside {
       width: 45%;
+      max-width: 100%;
+      @include lg {
+        width: 100%;
+      }
+
       gap: 2%;
       flex-direction: column;
       gap: $sm-font;
       margin: $xl-font 0;
       min-height: 400px;
-      max-width: 40vw;
       padding: $md-font;
       h1 {
         margin-bottom: $md-font;
@@ -67,6 +77,7 @@
 
   .footerLinks {
     @include flexSpaceAround;
+    gap: $sm-font;
     background-color: $primary-color;
     padding: $xxl-font2 $xxl-font2 $xxl-font;
 
@@ -74,6 +85,9 @@
       color: $white-color;
       font-weight: 400;
       font-size: $extra-font;
+      @include lg {
+        font-size: $sm-font;
+      }
     }
     .activeLink {
       color: $secondary-color;
