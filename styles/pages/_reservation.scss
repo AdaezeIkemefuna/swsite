@@ -1,27 +1,53 @@
 .mainReservation {
   background-color: $background-color;
   padding: $xxl-font2 $xl-font $xl-font;
-  animation: fadeIn 3s;
-
+  animation: fadeIn 0.5s;
+  backface-visibility: hidden;
   @include flexCenterCenter;
+  @include lg {
+    align-items: stretch;
+    padding: $xl-font;
+  }
   flex-direction: column;
   h1 {
     color: $primary-color;
     margin-bottom: $xxl-font2;
+    @include lg {
+      margin-bottom: $xxl-font;
+    }
+    align-self: center;
   }
 
   .inputSection {
     @include flexCenterCenter;
+    @include lg {
+      flex-direction: column;
+      gap: $sm-font;
+    }
     gap: $xxl-font3;
+
     margin-bottom: $xl-font;
     & > * {
       @include flexSpaceCenter;
       flex-direction: column;
       gap: $xl-font;
+      @include lg {
+        gap: $sm-font;
+      }
       min-width: 300px;
+      max-width: 100%;
+      @include lg {
+        width: 100%;
+      }
       & > * {
         width: 100%;
       }
+    }
+  }
+  button {
+    margin-top: $lg-font;
+    @include lg {
+      display: inline-block;
     }
   }
 }

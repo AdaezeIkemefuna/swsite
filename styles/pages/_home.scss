@@ -1,18 +1,31 @@
 .headerWrapper {
   background-color: $primary-color;
   padding-bottom: $xl-font;
-  animation: fadeIn 3s;
-
+  animation: fadeIn 0.5s;
+  backface-visibility: hidden;
   .headerTop {
     max-width: 100vw;
     height: 60vh;
     position: relative;
     display: block;
+    @include sm {
+      height: 393px;
+    }
+    .mobileImg {
+      display: none;
+      @include sm {
+        display: block;
+      }
+    }
   }
 
   .headerBottom {
     @include flexSpaceAround;
     padding: 0 $xxl-font2;
+    @include lg {
+      flex-direction: column;
+      padding: 0 $lg-font;
+    }
     aside {
       width: 50%;
       @include flexCenterCenter;
@@ -21,8 +34,12 @@
       margin: $xxl-font 0;
       min-height: 150px;
       width: 350px;
+      @include lg {
+        width: 100%;
+      }
       h1 {
         margin-bottom: $md-font;
+        text-align: center;
       }
       p {
         margin-bottom: $md-font;
@@ -33,13 +50,23 @@
 
 .main {
   padding: 0;
+  @include lg {
+    border-top: 2px solid $background-color;
+  }
   &__section {
     @include flexSpaceCenter;
+    @include lg {
+      flex-direction: column-reverse;
+      gap: $xxl-font;
+    }
     min-height: 300px;
     background-color: $primary-color;
 
     &:nth-child(even) {
       flex-direction: row-reverse;
+      @include lg {
+        flex-direction: column-reverse;
+      }
     }
 
     .main__sectionAside {
@@ -47,17 +74,29 @@
       display: block;
       height: 500px;
       width: 50%;
-      max-width: 50vw;
+      max-width: 100vw;
+      @include lg {
+        width: 100%;
+        height: 400px;
+        margin-bottom: $xxl-font2;
+      }
     }
 
     .main__sectionAside2 {
       width: 50%;
-      max-width: 50vw;
+      max-width: 100vw;
       padding: 0 8rem;
+      @include lg {
+        width: 100%;
+        padding: 0 $lg-font;
+      }
 
       h1 {
         margin-bottom: $lg-font;
         margin-top: -$xxl-font;
+        @include lg {
+          margin-top: $lg-font;
+        }
       }
 
       p:nth-child(2) {

@@ -28,8 +28,9 @@ export default function page() {
       <textarea
         placeholder="Message"
         className={styles.input}
-        style={{ width: "78%", minHeight: "180px" }}
+        style={{ minWidth: "78%", minHeight: "180px", maxWidth: "100%" }}
       ></textarea>
+      <button className={styles.btn2}>make a reservation</button>
     </div>
   );
 }

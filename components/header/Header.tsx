@@ -34,6 +34,12 @@ export default function Header() {
     <div className={styles.headerWrapper}>
       <div className={styles.headerTop}>
         <Image src="/assets/bg.png" alt="bg" fill />
+        <Image
+          src="/assets/bg-mobile.png"
+          alt="bg"
+          fill
+          className={styles.mobileImg}
+        />
       </div>
       <div className={styles.headerBottom}>
         {Links.map((link, index) => {

@@ -4,7 +4,7 @@ import { HiPhone } from "react-icons/hi";
 import Image from "next/image";
 export default function page() {
   return (
-    <div className={styles.main}>
+    <div className={styles.mainContact}>
       <section className={styles.contactWrapper}>
         <aside>
           <h1>Use the form below to contact us</h1>

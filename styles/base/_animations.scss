@@ -1,8 +1,19 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    padding-top: $md-font;
   }
   100% {
     opacity: 1;
+    padding-top: 0;
+  }
+}
+
+@keyframes fadeInNav {
+  0% {
+    margin-bottom: $sm-font;
+  }
+  100% {
+    margin-bottom: 0;
   }
 }
